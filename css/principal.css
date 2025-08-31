@@ -1,0 +1,110 @@
+/* Estilos básicos */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fef8f2;
+  color: #333;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  background: #ffbb33;
+  padding: 15px;
+}
+header h1 { margin: 0; }
+nav { margin-top: 10px; }
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover { color: #fff; }
+nav a.active { color: #fff; text-decoration: underline; }
+
+/* Hero */
+.hero {
+  padding: 60px 20px;
+  background: url("images/habitat.jpg") center/cover no-repeat;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  animation: fadeIn 2s ease;
+}
+.hero h2 { font-size: 2em; }
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffbb33;
+  color: #222;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff9900;
+}
+
+/* Grid de leones */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 250px;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card h3 { margin: 10px 0; }
+
+/* Contenido */
+.content {
+  padding: 20px;
+  animation: fadeIn 1.5s ease;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+.content input, .content textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.content button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #ffbb33;
+  cursor: pointer;
+}
+.content button:hover { background: #ff9900; }
+
+/* Footer */
+footer {
+  background: #ffbb33;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
